@@ -46,12 +46,9 @@ document.write("<br><br>");
 let promptResult = prompt("Введите число", [1]);
 document.write(`Вы ввели число: ${promptResult}`);
 
-
 document.write("<br><br>");
 document.write("<b>confirm - Ты изучаешь JS?</b>");
 document.write("<br><br>");
-
-
 
 let confirmResult = confirm("Ты изучаешь JS?");
 
@@ -59,4 +56,53 @@ if (confirmResult) {
   document.write('Красавчик');
 } else {
   document.write('Пора начинать');
+}
+
+document.write("<br><br>");
+document.write("Преобразование типов");
+document.write("<br><br>");
+document.write("Строковое");
+document.write("<br><br>");
+
+let value = true; // boolean
+alert (typeof value); // напишет boolean, так как преобразуется в текст 
+document.write(value); // будет true
+
+document.write("<br><br>");
+document.write("Численное");
+document.write("<br><br>");
+document.write("10 / 5");
+
+let beStr = "hello," + " " + "world";
+document.write(beStr);
+
+
+let int = '10';
+
+console.log(int);
+console.log(+int);
+
+let boo = true;
+
+console.log(boo);
+console.log(+boo);
+
+let strEmpty = "";
+console.log(strEmpty);
+console.log(+strEmpty);
+
+let a = 1, b = 1;
+
+let c = ++a; // ? 2 / 2
+let d = b++; // ? 1 / 2
+
+
+document.write('a' > 'A');
+
+let quest = prompt("В каком году был 2015 год");
+
+if (Number(quest) === 2015) {
+  alert('Вы правы');
+} else {
+  alert('А вот и нет');
 }
